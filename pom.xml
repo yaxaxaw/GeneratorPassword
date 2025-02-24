@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <!-- Уникальный идентификатор вашего проекта -->
+    <groupId>com.example</groupId> <!-- Замените на ваш ID, например, название компании -->
+    <artifactId>my-project</artifactId> <!-- Имя вашего проекта -->
+    <version>1.0-SNAPSHOT</version> <!-- Версия вашего проекта -->
+
+    <dependencies>
+        <dependency>
+            <groupId>com.nulab-inc</groupId>
+            <artifactId>zxcvbn</artifactId>
+            <version>1.9.0</version>
+        </dependency>
+    </dependencies>
+</project>
