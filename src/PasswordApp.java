@@ -22,8 +22,12 @@ public class PasswordApp {
         boolean useSpecial = scanner.nextLine().equalsIgnoreCase("yes");
 
         String password = generator.generatePassword(length, useUppercase, useLowercase, useNumbers, useSpecial);
-        System.out.println("Generated password: " + password);
 
-        PasswordStrengthEvaluator.evaluatePasswordStrength(password);
+        if (!password.startsWith("Error:")) {
+            System.out.println("Generated password: " + password);
+            PasswordStrengthEvaluator.evaluatePasswordStrength(password);
+        } else {
+            System.out.println(password);
+        }
     }
 }
